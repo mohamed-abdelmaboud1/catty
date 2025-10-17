@@ -5,8 +5,7 @@ class SplashViewBody extends StatelessWidget {
   const SplashViewBody({
     super.key,
     required this.logoScaleAnimation,
-    required this.logoOpacityAnimation,
-
+    required this.logoOpacityAnimation
   });
 
   final Animation<double> logoScaleAnimation;
