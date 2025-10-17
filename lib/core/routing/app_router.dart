@@ -1,4 +1,5 @@
 import 'package:catty/core/widgets/scaffold_with_nav_bar.dart';
+import 'package:catty/features/home/presentation/views/home_view.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/splash/presentation/views/get_started_view.dart';
@@ -15,7 +16,7 @@ class AppRouter {
       ),
       GoRoute(
         path: Routes.getStarted,
-        builder: (context, state) => const GetStartedView(),
+        builder: (context, state) => const HomeView(),
       ),
       // StatefulShellRoute.indexedStack(
       //   builder: (context, state, navigationShell) {
