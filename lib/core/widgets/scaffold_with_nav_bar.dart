@@ -11,9 +11,8 @@ class ScaffoldWithNavBar extends StatelessWidget {
 
   static const _icons = [
     (AppImages.imagesHomIcon, 'Home'),
-    (AppImages.imagesHeartIcon, 'Heart'),
-    (AppImages.imagesMessagesIcon, 'Message'),
-    (AppImages.imagesProfileCircleIcon, 'Profile'),
+    (AppImages.imagesPetsIcon, 'Gallery'),
+    (AppImages.imagesHeartIcon, 'Favorites'),
   ];
 
   @override

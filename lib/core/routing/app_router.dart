@@ -1,5 +1,8 @@
 import 'package:catty/core/widgets/scaffold_with_nav_bar.dart';
+// import 'package:catty/features/favorite/presentation/pages/favorite_view.dart';
+import 'package:catty/features/gallery/presentation/pages/gallery_view.dart';
 import 'package:catty/features/home/presentation/views/home_view.dart';
+import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/splash/presentation/views/get_started_view.dart';
@@ -8,7 +11,7 @@ import 'routes.dart';
 
 class AppRouter {
   static final GoRouter router = GoRouter(
-    initialLocation: Routes.splash,
+    initialLocation: Routes.home,
     routes: [
       GoRoute(
         path: Routes.splash,
@@ -16,48 +19,39 @@ class AppRouter {
       ),
       GoRoute(
         path: Routes.getStarted,
-        builder: (context, state) => const HomeView(),
+        builder: (context, state) => const GetStartedView(),
       ),
-      // StatefulShellRoute.indexedStack(
-      //   builder: (context, state, navigationShell) {
-      //     return ScaffoldWithNavBar(navigationShell: navigationShell);
-      //   },
-      //   branches: [
-      //     StatefulShellBranch(
-      //       routes: [
-      //         GoRoute(
-      //           path: Routes.home,
-      //           builder: (context, state) => const HomeView(),
-      //           routes: [
-      //             GoRoute(
-      //               path: Routes.details,
-      //               builder: (context, state) {
-      //                 final id = state.extra as String;
-      //                 return SplashView();
-      //               },
-      //             ),
-      //           ],
-      //         ),
-      //       ],
-      //     ),
-      //     StatefulShellBranch(
-      //       routes: [
-      //         GoRoute(
-      //           path: Routes.profile,
-      //           builder: (context, state) => const SplashView(),
-      //         ),
-      //       ],
-      //     ),
-      //     StatefulShellBranch(
-      //       routes: [
-      //         GoRoute(
-      //           path: Routes.settings,
-      //           builder: (context, state) => const SplashView(),
-      //         ),
-      //       ],
-      //     ),
-      //   ],
-      // ),
+      StatefulShellRoute.indexedStack(
+        builder: (context, state, navigationShell) {
+          return ScaffoldWithNavBar(navigationShell: navigationShell);
+        },
+        branches: [
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: Routes.home,
+                builder: (context, state) => const HomeView(),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: Routes.gallery,
+                builder: (context, state) => const GalleryView(),
+              ),
+            ],
+          ),
+          StatefulShellBranch(
+            routes: [
+              GoRoute(
+                path: Routes.favorite,
+                builder: (context, state) => SizedBox(),
+              ),
+            ],
+          ),
+        ],
+      ),
     ],
   );
 }
