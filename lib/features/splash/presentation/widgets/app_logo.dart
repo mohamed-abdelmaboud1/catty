@@ -7,6 +7,8 @@ import '../../../../core/utils/app_images.dart';
 class AppLogo extends StatelessWidget {
   const AppLogo({super.key});
 
+  static const double _shadowOpacity = 0.08;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -15,7 +17,7 @@ class AppLogo extends StatelessWidget {
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withValues(alpha: 0.08),
+            color: Colors.black.withValues(alpha:_shadowOpacity),
             blurRadius: 40,
             offset: const Offset(0, 10),
           ),

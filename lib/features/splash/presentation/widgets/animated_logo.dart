@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../../../../core/utils/app_images.dart';
 import '../../../../core/widgets/custom_image.dart';
 
+const double _logoBorderRadius = 30.0;
+
 class AnimatedLogo extends StatelessWidget {
   final Animation<double> scaleAnimation;
   final Animation<double> opacityAnimation;
@@ -22,7 +24,7 @@ class AnimatedLogo extends StatelessWidget {
           child: Transform.scale(
             scale: scaleAnimation.value,
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(30),
+              borderRadius: BorderRadius.circular(_logoBorderRadius),
               child: CustomImage(AppImages.imagesAppLogo),
             ),
           ),
