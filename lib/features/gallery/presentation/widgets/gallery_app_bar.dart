@@ -3,7 +3,8 @@ import 'package:catty/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
-
+import 'package:catty/core/di/service_locator.dart';
+import 'package:catty/features/gallery/presentation/cubit/gallery_cubit.dart';
 class GalleryAppBar extends StatelessWidget {
   const GalleryAppBar({super.key});
 
@@ -32,6 +33,7 @@ class GalleryAppBar extends StatelessWidget {
           GestureDetector(
             onTap: () {
               // TODO: Implement refresh functionality
+              getIt<GalleryCubit>()..fetchGallery();
             },
             child: Container(
               padding: EdgeInsets.all(10.w),
