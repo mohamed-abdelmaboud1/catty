@@ -154,10 +154,22 @@ catty/
 
 ---
 
-## 📸 Screenshots
 
 ## 📸 Screenshots
 
+### 🏠 Splash Screen
+
+<table>
+  <tr>
+    <td>
+      <img width="650px" src="https://github.com/user-attachments/assets/a463d157-6a30-43ae-9b6b-789a9f79d5aa" /><br/>
+    </td>
+    <td>
+      <img width="650px" src="https://github.com/user-attachments/assets/6b424ebe-f484-43da-aaf3-c09ce772cc9b" /><br/>
+  </tr>
+</table>
+
+---
 ### 🏠 Home Screen
 
 <table>
