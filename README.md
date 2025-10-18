@@ -17,17 +17,6 @@ A beautiful and modern Flutter application for cat enthusiasts to discover, expl
 
 **Catty** is a cross-platform mobile application built with Flutter that allows users to explore a comprehensive collection of cat breeds, view stunning cat images in a gallery, and save their favorite cats. The app features a modern UI design with smooth animations, responsive layouts, and clean architecture principles.
 
-### 🎯 Main Goals
-
-- **Discover Cat Breeds**: Browse through various cat breeds with detailed information about their characteristics, temperament, and origin.
-- **Gallery Experience**: View high-quality cat images in an organized grid layout with search functionality.
-- **Favorites Management**: Save and manage your favorite cat breeds and images for quick access.
-- **User-Friendly Interface**: Enjoy a smooth, intuitive, and visually appealing user experience with modern design patterns.
-
----
-
-## ✨ Features
-
 ### Core Functionality
 
 - 🏠 **Home Screen** - Welcome banner, featured cats, popular breeds, and discovery sections
@@ -35,27 +24,6 @@ A beautiful and modern Flutter application for cat enthusiasts to discover, expl
 - ❤️ **Favorites** - Save and manage your favorite cat breeds and images
 - 🔍 **Search** - Find specific cat breeds quickly using the search functionality
 - 🎨 **Modern UI** - Beautiful gradient designs, smooth animations, and responsive layouts
-
-### Technical Features
-
-- 📱 **Cross-Platform** - Runs on Android, iOS, Web, Windows, Linux, and macOS
-- 🏗️ **Clean Architecture** - Feature-based structure with separation of concerns
-- 🔄 **State Management** - BLoC pattern for predictable state management
-- 🌐 **API Integration** - RESTful API integration with Dio and Retrofit
-- 💾 **Local Storage** - Secure storage for user preferences and cached data
-- 🎭 **Animations** - Smooth page transitions and UI animations
-- 📐 **Responsive Design** - Adaptive layouts using flutter_screenutil
-- 🧪 **Testing** - Comprehensive unit, widget, and integration tests
-
-### Additional Features
-
-- 🌓 **Theme Support** - Custom color schemes and typography
-- 📦 **Dependency Injection** - GetIt for service locator pattern
-- 🔐 **Secure Storage** - Flutter Secure Storage for sensitive data
-- 📝 **Logging** - Pretty logging for debugging and monitoring
-- 🖼️ **Image Caching** - Cached network images for better performance
-- ♻️ **State Persistence** - Hydrated BLoC for state persistence
-
 ---
 
 ## 🏗️ Project Structure
@@ -187,42 +155,55 @@ catty/
 
 ## 📸 Screenshots
 
-### Home Screen
+## 📸 Screenshots
 
-![Home Screen - Top](screenshots/home_top.png)
-_Welcome banner with gradient design and cat explorer branding_
-
-![Home Screen - Stats](screenshots/home_stats.png)
-_Statistics cards showing breeds, images, and favorites count_
-
-![Home Screen - Featured](screenshots/home_featured.png)
-_Featured cats section with beautiful grid layout_
-
-![Home Screen - Breeds](screenshots/home_breeds.png)
-_Popular breeds list with detailed information_
-
-### Gallery Screen
-
-![Gallery View](screenshots/gallery.png)
-_Grid-based gallery with search functionality and refresh option_
-
-![Gallery Search](screenshots/gallery_search.png)
-_Search bar for finding specific cat breeds_
-
-### Favorites Screen
-
-![Favorites](screenshots/favorites.png)
-_User's saved favorite cats in a grid layout_
-
-![Favorites Empty State](screenshots/favorites_empty.png)
-_Empty state with helpful guidance when no favorites saved_
-
-### Navigation
-
-![Bottom Navigation](screenshots/navigation.png)
-_Bottom navigation bar with Home, Gallery, and Favorites tabs_
+### 🏠 Home Screen
+<table>
+  <tr>
+    <td>
+      <img width="650px" src="https://github.com/user-attachments/assets/fd96352f-705c-4c11-9192-39f4d69963c1"><br/>
+      <em>Statistics cards showing breeds, images, and favorites count</em>
+    </td>
+    <td>
+      <img width="650px" src="https://github.com/user-attachments/assets/e71dc574-ad33-4cb8-8239-3b021273641c"><br/>
+      <em>Featured cats section with beautiful grid layout</em>
+    </td>
+    <td>
+      <img width="650px" src="https://github.com/user-attachments/assets/9af2bc3e-b14a-4ec7-b289-504b7a69c733"><br/>
+      <em>Popular breeds list with detailed information</em>
+    </td>
+  </tr>
+</table>
 
 ---
+
+### 🖼️ Gallery Screen
+<table>
+  <tr>
+    <td>
+      <img width="650px" src="https://github.com/user-attachments/assets/9a120417-c6fd-47fe-9b77-2278a8385a29">
+    </td>
+    <td>
+      <img width="650px" src="https://github.com/user-attachments/assets/9ea4fb2b-f7b0-423c-a8d4-c758fc1b46d1">
+    </td>
+  </tr>
+</table>
+
+---
+
+### ⭐ Favorites Screen
+<table>
+  <tr>
+    <td>
+      <img width="650px" src="screenshots/favorites.png"><br/>
+      <em>User's saved favorite cats in a grid layout</em>
+    </td>
+    <td>
+      <img width="650px" src="screenshots/favorites_empty.png"><br/>
+      <em>Empty state with helpful guidance when no favorites are saved</em>
+    </td>
+  </tr>
+</table>
 
 ## 🔀 Git Workflow
 
