@@ -1,8 +1,8 @@
 import 'package:catty/core/widgets/scaffold_with_nav_bar.dart';
+import 'package:catty/features/favorite/presentation/pages/favorite_view.dart';
 // import 'package:catty/features/favorite/presentation/pages/favorite_view.dart';
 import 'package:catty/features/gallery/presentation/pages/gallery_view.dart';
 import 'package:catty/features/home/presentation/views/home_view.dart';
-import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../features/splash/presentation/views/get_started_view.dart';
@@ -46,7 +46,7 @@ class AppRouter {
             routes: [
               GoRoute(
                 path: Routes.favorite,
-                builder: (context, state) => SizedBox(),
+                builder: (context, state) => const FavoriteView(),
               ),
             ],
           ),
