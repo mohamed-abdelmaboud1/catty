@@ -24,6 +24,7 @@ A beautiful and modern Flutter application for cat enthusiasts to discover, expl
 - ❤️ **Favorites** - Save and manage your favorite cat breeds and images
 - 🔍 **Search** - Find specific cat breeds quickly using the search functionality
 - 🎨 **Modern UI** - Beautiful gradient designs, smooth animations, and responsive layouts
+
 ---
 
 ## 🏗️ Project Structure
@@ -158,6 +159,7 @@ catty/
 ## 📸 Screenshots
 
 ### 🏠 Home Screen
+
 <table>
   <tr>
     <td>
@@ -178,6 +180,7 @@ catty/
 ---
 
 ### 🖼️ Gallery Screen
+
 <table>
   <tr>
     <td>
@@ -192,6 +195,7 @@ catty/
 ---
 
 ### ⭐ Favorites Screen
+
 <table>
   <tr>
     <td>
@@ -233,19 +237,18 @@ main (51c88eb - production-ready code)
 
 ### Active Branches
 
-| Branch                      | Status         | Last Commit | Description                        |
-| --------------------------- | -------------- | ----------- | ---------------------------------- |
-| `main`                      | 🟢 Stable      | 51c88eb     | Production-ready code              |
-| `develop`                   | 🔄 Integration | 1 day ago   | Merge point for features           |
-| `feature/gallery`           | ⚡ **ACTIVE**  | 26 min ago  | Gallery view with tests (619ddcb)  |
-| `feature/home`              | ✅ Ready       | 1 day ago   | Home screen with widgets (e53a0e7) |
-| `feature/splash`            | ✅ Ready       | 1 day ago   | Splash & onboarding (7694e1d)      |
-| `feature/project-structure` | ✅ Complete    | 1 day ago   | Base architecture (9352eec)        |
-
+| Branch                      | Status         | Last Commit | Description                               |
+| --------------------------- | -------------- | ----------- | ----------------------------------------- |
+| `main`                      | 🟢 Stable      | 51c88eb     | Production-ready code                     |
+| `develop`                   | 🔄 Integration | 1 day ago   | Merge point for features                  |
+| `feature/favorite`          | ⚡ **ACTIVE**  | Just now    | Favorites feature with grid & empty state |
+| `feature/gallery`           | ✅ Ready       | 26 min ago  | Gallery view with tests (619ddcb)         |
+| `feature/home`              | ✅ Ready       | 1 day ago   | Home screen with widgets (e53a0e7)        |
+| `feature/splash`            | ✅ Ready       | 1 day ago   | Splash & onboarding (7694e1d)             |
+| `feature/project-structure` | ✅ Complete    | 1 day ago   | Base architecture (9352eec)               |
 
 - `test`: Adding tests (e.g., `test(gallery): add comprehensive widget tests`)
 - `chore`: Build/tooling changes (e.g., `chore: update dependencies`)
-
 
 ### Development Workflow Explanation
 
@@ -261,7 +264,8 @@ This project uses a **parallel feature development** approach:
 
    - Multiple features developed simultaneously
    - Each feature branch is independent
-   - `feature/gallery` ← Currently active with tests
+   - `feature/favorite` ← Currently active with favorites grid & empty state
+   - `feature/gallery` ← Gallery view with comprehensive tests
    - `feature/home` ← UI components complete
    - `feature/splash` ← Onboarding ready
 
@@ -276,6 +280,18 @@ This project uses a **parallel feature development** approach:
    - Automated tests must pass
    - Code quality checks enforced
    - Example: PR #4 merged features into develop
+
+### Current Development State
+
+**Active Development:**
+
+- ✅ Project structure, splash, and home features merged to develop
+- ✅ Gallery feature complete with comprehensive testing
+- 🔄 **Favorite feature in progress** (current branch)
+  - FavoriteView with grid layout
+  - Empty state UI component
+  - Bottom navigation integration
+- 📋 Next: Complete favorites functionality and merge to develop
 
 ---
 
