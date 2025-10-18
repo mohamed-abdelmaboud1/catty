@@ -195,11 +195,7 @@ catty/
 <table>
   <tr>
     <td>
-      <img width="650px" src="screenshots/favorites.png"><br/>
-      <em>User's saved favorite cats in a grid layout</em>
-    </td>
-    <td>
-      <img width="650px" src="screenshots/favorites_empty.png"><br/>
+      <img width="650px" src="https://github.com/user-attachments/assets/e2a09fa3-8614-4e77-ad83-6875d4749279"><br/>
       <em>Empty state with helpful guidance when no favorites are saved</em>
     </td>
   </tr>
